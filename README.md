@@ -1,3 +1,3 @@
-# aind-capsule-template
+# v1dd_nwb
 
-Basic structure of a capsule to be customized as needed.
+This takes a NWB file of multiplane data for V1DD, filters the image segmentation to only the ROIs that are considered soma, creates a new NWB file and saves it as a derived asset.
