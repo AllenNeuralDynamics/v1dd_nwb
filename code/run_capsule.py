@@ -149,7 +149,7 @@ if __name__ == "__main__":
         DataProcess(
             name="Filter NWB values",
             code=Code(
-                url="https://codeocean.allenneuraldynamics.org/capsule/7370687/tree"  # TODO Replace this
+                url="https://codeocean.allenneuraldynamics.org/capsule/6186623/tree"
             ),
             stage=ProcessStage.PROCESSING,
             process_type=ProcessName.OTHER,

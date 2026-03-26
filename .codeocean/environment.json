@@ -1,28 +1,58 @@
 {
 	"version": 1,
-	"base_image": "codeocean/jupyterlab:3.6.1-miniconda4.12.0-python3.9-ubuntu20.04",
+	"base_image": "codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04",
 	"options": {
 		"registry_host_arg": true,
 		"git_ask_pass": true,
 		"mount_secrets": true
 	},
 	"installers": {
+		"apt": {
+			"packages": [
+				{
+					"name": "build-essential",
+					"version": "12.9ubuntu3"
+				},
+				{
+					"name": "software-properties-common",
+					"version": "0.99.22.9"
+				}
+			],
+			"install_software_properties_common": true
+		},
 		"pip3": {
 			"packages": [
 				{
-					"name": "aind-data-schema"
+					"name": "aind-data-schema",
+					"version": "2.5.0"
 				},
 				{
-					"name": "aind-metadata-manager"
+					"name": "aind-data-schema-models",
+					"version": "5.4.2"
 				},
 				{
-					"name": "hdmf-zarr"
+					"name": "aind-metadata-manager",
+					"version": "0.0.6"
 				},
 				{
-					"name": "pandas"
+					"name": "hdmf-zarr",
+					"version": "0.11.3"
 				},
 				{
-					"name": "pynwb"
+					"name": "jupyterlab",
+					"version": "4.1.6"
+				},
+				{
+					"name": "numpy",
+					"version": "1.26.4"
+				},
+				{
+					"name": "pandas",
+					"version": "2.2.2"
+				},
+				{
+					"name": "pynwb",
+					"version": "3.1.2"
 				}
 			],
 			"options": {},
